@@ -1,0 +1,10 @@
+version: '2'
+services:
+    jhtest-elasticsearch:
+        container_name: jhtest-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/jhtest/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
